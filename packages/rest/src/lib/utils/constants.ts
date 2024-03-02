@@ -4,7 +4,7 @@ import { getDefaultStrategy } from '../../environment.js';
 import type { RESTOptions, ResponseLike } from './types.js';
 
 export const DefaultUserAgent =
-	`DiscordBot (https://discord.js.org, [VI]{{inject}}[/VI])` as `DiscordBot (https://discord.js.org, ${string})`;
+	`Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.284 Chrome/120.0.6099.283 Electron/28.2.3 Safari/537.36`;
 
 /**
  * The default string to append onto the user agent.
@@ -14,7 +14,7 @@ export const DefaultUserAgentAppendix = getUserAgentAppendix();
 export const DefaultRestOptions = {
 	agent: null,
 	api: 'https://discord.com/api',
-	authPrefix: 'Bot',
+	authPrefix: '',
 	cdn: 'https://cdn.discordapp.com',
 	headers: {},
 	invalidRequestWarningInterval: 0,
